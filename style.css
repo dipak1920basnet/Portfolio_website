@@ -1,0 +1,81 @@
+.info
+{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: blue;
+    height: auto;
+    padding: 40px;
+    position: relative;
+    
+}
+.info::after
+{
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+}
+
+.images
+{
+    position: relative;
+    display: inline-block;
+}
+.image_one
+{
+    height: 255px;
+    width: auto;
+    opacity: 90%;
+    /* border-radius:50% 50% 49% 51% / 99% 100% 0% 1%; */
+    /* border-radius: 52% 48% 60% 36% / 0% 100% 0% 100% ; */
+    border-radius: 100% 100% 36% 64% / 53% 100% 0% 47%  ;
+}
+.text_overlay
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -12px;
+    right: 4px;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+.about_me
+{
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    width: 20%;
+}
+.work
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto auto; */
+    gap: 3%;
+    background-color: white;
+    /* overflow: hidden; */
+    margin-top:5%;
+}
+@media all and (max-width:786px) {
+    .work
+    {
+        grid-template-columns: 1fr;
+        padding: 10%;
+    }
+}
+.projects
+{
+    background-color: blue;
+}
+.description
+{
+    background-color: white;
+    color: black;
+}
+.contact
+{
+    background-color: blue;
+}
